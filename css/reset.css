@@ -1,0 +1,29 @@
+body,div,h1,h2,h3,h4,h5,h6,input,form,a,p,textarea,ul,li{
+	margin: 0;
+	padding:0;
+ 	font-family: "Microsoft Yahei","SimHei","SimSun",Arial,"sans-serif";
+	box-sizing: border-box;
+	font-size: 14px;
+}
+ul,li,ol{list-style: none}
+a{text-decoration: none;color: #333}
+a span{text-decoration: none;color: #DDDDDD}
+a:hover{text-decoration: none}
+img{border: none;display: block;}
+input,select{border: 1px solid #CCCCCC;outline: none}
+.lf{
+    float: left;
+    display: inline; }
+
+.rf {
+    float: right;
+    display: inline; }
+.cleatfloat{zoom:1}
+.clearfloat:after{
+	display: block;
+	clear:both;
+	content: "";
+	visibility: hidden;
+	height: 0;
+}
+table{border-collapse: collapse;border-spacing: 0}

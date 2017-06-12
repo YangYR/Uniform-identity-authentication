@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>登录china</title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+</head>
+<body class="bg">
+    <div class="bg-title">
+        <img src="img/logo.png"/>
+    </div>
+    <!--中文登录-->
+    <div class="login-box">
+        <div class="login-title">
+            <span class="language"><a href="#" class="chinaBox">中文</a>&nbsp;|&nbsp;<a href="#" class="englishBox">English</a></span>
+            <a href="#" class="ewmBox"><span class="ewm"></span></a>
+        </div>
+        <form action="index.html" method="get">
+            <div class="login-input">
+                <input type="text" placeholder="用户名" class="username"/>
+            </div>
+            <div class="login-input">
+                <input type="password" placeholder="密码" class="userpwd"/>
+            </div>
+            <div class="login-input">
+                <input type="text"  class="login-yzm" placeholder="验证码" onkeyup="value=value.replace(/[^\w\.\/]/ig,'')"/>
+                <a href="#" class="yzm"></a>
+                <a href="#" class="refresh"><b></b>&nbsp;刷新</a>
+            </div>
+            <div class="register">
+                <input type="submit" value="登&nbsp;录"/>
+            </div>
+        </form>
+        <a href="填写信息.html" class="forgetPwd">忘记密码？</a>
+    </div>
+    <!--英文登录-->
+    <div class="login-box" style="display: none">
+        <div class="login-title">
+            <span class="language"><a href="#" class="chinaBox">中文</a>&nbsp;|&nbsp;<a href="#" class="englishBox">English</a></span>
+            <a href="#" class="ewmBox"><span class="ewm"></span></a>
+        </div>
+        <form action="index.html" method="get">
+            <div class="login-input">
+                <input type="text" placeholder="Account ID" class="username"/>
+            </div>
+            <div class="login-input">
+                <input type="password" placeholder="Password" class="userpwd"/>
+            </div>
+            <div class="login-input long">
+                <input type="text"  class="login-yzm" placeholder="Verification Code" onkeyup="value=value.replace(/[^\w\.\/]/ig,'')"/>
+                <a href="#" class="yzm"></a>
+                <a href="#" class="refresh"><b></b>&nbsp;Refresh</a>
+            </div>
+            <div class="register">
+                <input type="submit" value="Login"/>
+            </div>
+        </form>
+        <a href="填写信息.html" class="forgetPwd engForget">Forget password？</a>
+    </div>
+    <!--二维码登录开始-->
+    <div class="login-box login-color" style="display: none">
+        <div class="login-title">
+            <span class="language"><a href="#" class="chinaBox">中文</a>&nbsp;|&nbsp;<a href="#" class="englishBox">English</a></span>
+            <a href="#" class="computerBox"><span class="computer"></span></a>
+        </div>
+        <div class="code">
+            <img src="img/loginewm.png" width="140" height="140" alt=""/>
+        </div>
+        <div class="login-explain">
+            <dl>
+                <dt><a href="#"><img src="img/二维码.png"/></a></dt>
+                <dd>
+                    <p>找开手机APP <a href="#">掌上远成｜远成人</a></p>
+                    <p>扫一扫二维码即可登录</p>
+                </dd>
+            </dl>
+        </div>
+    </div>
+    <!--二维码登录结束-->
+    <div class="footer">
+        <p>Copyright&nbsp;&copy;&nbsp;2015-2017 版权所有：远成集团 沪ICP备11045012号</p>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

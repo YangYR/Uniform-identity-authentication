@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>2输入验证码</title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+</head>
+<body>
+    <div class="header">
+        <h1 class="header-title">
+            <a href="登录china.html">
+                <img src="img/leftLogo.png"/>
+            </a>
+        </h1>
+    </div>
+    <div class="main">
+        <div class="main-content">
+            <div class="horizon-box">
+                <p class="pwd"><b></b><img src="img/找回密码.png"/></p>
+            </div>
+            <div class="timeline">
+                <div class="for-liucheng clearfloat">
+                    <div class="liulist for-cur" style="width: 135px"></div>
+                    <div class="liulist for-cur" style="width: 140px"></div>
+                    <div class="liulist" style="width: 140px"></div>
+                    <div class="liulist" style="width: 140px"></div>
+                    <div class="liulist" style="width: 160px"></div>
+                    <div class="liutextbox">
+                        <div class="liutext for-cur" style="width: 160px"><em>1</em><br /><strong>填写信息</strong></div>
+                        <div class="liutext for-cur" style="width: 140px"><em>2</em><br /><strong>输入验证码</strong></div>
+                        <div class="liutext" style="width: 140px"><em>3</em><br /><strong>输入新密码</strong></div>
+                        <div class="liutext" style="width: 140px"><em>4</em><br /><strong>找回成功</strong></div>
+                    </div>
+                </div>
+            </div>
+            <form action="输入新密码.html" id="form-box" method="get">
+                <div class="form-box clearfloat">
+                    <div class="form-control fl">
+                        <label>验证码</label>
+                        <input type="text" style="width: 120px" onkeyup="value=value.replace(/[^\d]/g,'')"/>
+                        <a href="#" class="cxGet">获取短信验证码</a>
+                    </div>
+                </div>
+                <a href="#" class="next-step"><input type="submit" value="下一步"/></a>
+            </form>
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

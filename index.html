@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>远成集团身份认证系统</title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+</head>
+<body>
+    <div class="header">
+        <h1 class="header-title">
+            <a href="登录china.html">
+                <img src="img/leftLogo.png"/>
+            </a>
+        </h1>
+    </div>
+    <div class="main">
+        <div class="main-content">
+            <div class="horizon-box">
+                <p>您是首次登陆，请完善您的个人信息！</p>
+            </div>
+            <div class="horizon-box form-box clearfloat">
+                <div class="form-control fl">
+                    <label>员工号</label>
+                    <span>78901</span>
+                </div>
+            </div>
+            <div class="horizon-box form-box clearfloat">
+                <div class="form-control fl">
+                    <label>姓名</label>
+                    <span>马特</span>
+                </div>
+            </div>
+            <div class="horizon-box form-box clearfloat">
+                <div class="form-control fl">
+                    <label>所属部门</label>
+                    <span>集团总部-信息部-研发中心-快递快运事业部-研发部-Java开发组</span>
+                </div>
+            </div>
+            <div class="horizon-box form-box clearfloat">
+                <div class="form-control fl">
+                    <label class="important"><span class="red-star">*</span>&nbsp;手机号码</label>
+                    <input type="text" class="phonenum"/>
+                </div>
+            </div>
+            <div class="horizon-box form-box clearfloat" style="height: 90px">
+                <div class="form-control fl">
+                    <label class="important"><span class="red-star">*</span>&nbsp;新密码</label>
+                    <input type="password" class="first-pwd"/><span class="zq"></span>
+                    <span class="tips">密码必须包含数字、字母、下划线任意两种，长度至少8位以上</span>
+                </div>
+            </div>
+            <div class="horizon-box form-box clearfloat">
+                <div class="form-control fl">
+                    <label class="important"><span class="red-star">*</span>&nbsp;确认密码</label>
+                    <input type="password" class="second-pwd"/>
+                    <span class="diff">2次密码不一致</span>
+                </div>
+            </div>
+            <div class="big-horizon-box form-box clearfloat">
+                <div class="form-control fl">
+                    <label>上传头像</label>
+                    <a class="file" href="#">浏览<input type="file" onchange="previewImage(this)"/></a>
+                    <span class="exp">支持jpg、gif、png格式，且文件小于5M</span>
+                    <div id="preview">
+                            <img id="imghead" src='img/photos.png'>
+                    </div>
+                </div>
+            </div>
+            <a href="登录china.html" class="btn save">保存</a>
+        </div>
+    </div>
+<script src="js/jquery.min.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
